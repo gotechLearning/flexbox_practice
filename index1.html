@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-size: 1.3rem;
+            color: white;
+            font-weight: bold;
+            font-family: 'ubuntu',sans-serif;
+        }
+        .container{
+            background-image: url('second.jpg');
+            width: 100vw;
+            height: 87vh;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .nav{
+            display: inline-block;
+            width: 100vw;
+            height: 15vh;
+            background-color:rgb(240, 225, 228);
+            /* justify-content: center; */
+            /* align-items: center; */
+            text-align: center;
+        }
+        .nav ul{
+            justify-content: flex-end;
+        }
+        .nav li{
+            display: inline-block;
+            /* justify-content: flex-end; */
+            /* align-content: center; */
+            /* text-align: center; */
+        }
+        .nav li p{
+           padding: 2px 8px;
+           margin-top: 25%;
+        }
+        .box{
+            border: 2px solid white;
+            padding: 25px 35px;
+        }
+        .footer{
+            background-color: aquamarine;
+            width: 100vw;
+            height: 16vh;
+         margin-top: 34%;
+        }
+        .grid-container{
+            display: grid;
+            grid-template-columns: repeat(3, 180px);
+            grid-template-rows: 50px;
+            gap: 30%;
+            
+        }
+        .grid-container>*{
+            margin-top: 10%;
+            background-color: rgb(224, 169, 96);
+            padding: 2px 3px;
+            margin-left: 14%;
+
+
+        }
+        
+        
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <ul>
+                <li><p>HOME</p></li>
+                <li><p>ABOUT</p></li>
+                <li><p>SERVICES</p></li>
+                <li><p>PORTFOLIO</p></li>
+                <li><p>BLOG</p></li>
+                <li><p>PAGES</p></li>
+                <li><p>CONTACT</p></li>
+                <li><p class="box"> CONTACT US</p></li>
+            </ul>
+            
+        </div>
+        <div class="footer">
+            <div class="grid-container">
+                <div class="grid-item"><p>READ MORE</p></div>
+                <div class="grid-item"><p>READ MORE</p></div>
+                <div class="grid-item"><p>READ MORE</p></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
